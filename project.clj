@@ -7,6 +7,8 @@
                  [cascalog "2.0.0"]
                  [cascalog/cascalog-more-taps "2.0.0"]
                  [org.clojure/data.json "0.2.2"]]
-  :profiles {:dev {:dependencies [[org.apache.hadoop/hadoop-core "1.1.2"]]}}
+  :profiles {:dev {:dependencies [[org.apache.hadoop/hadoop-core "1.1.2"]
+                                  [cascalog/midje-cascalog "2.0.0"]]
+                   :plugins [[lein-midje "3.1.1"]]}}
   :aot [cookbook.etl
         cookbook.aggregation])
